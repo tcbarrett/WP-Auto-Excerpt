@@ -12,17 +12,7 @@ Min WP Version: 3
  * Fetch the excerpt as WordPress would.
  */
 function tcb_get_post_excerpt( $post ){
-	return apply_filters( 'get_the_excerpt', $post->post_excerpt );
-
-  $text = $post->post_content;
-  $text = strip_shortcodes( $text );
-  $text = apply_filters( 'the_content', $text );
-  $text = str_replace( ']]>', ']]>', $text );
-
-  $excerpt_length = apply_filters( 'excerpt_length', 55 );
-  $excerpt_more   = apply_filters( 'excerpt_more', ' ' . '[...]' );
-  $text           = wp_trim_words( $text, $excerpt_length, '' );
-  return $text;
+	return apply_filters( 'get_the_excerpt', $post->post_content );
 }
 
 /**
