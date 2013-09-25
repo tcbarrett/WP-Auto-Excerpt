@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Auto Excerpt
+Plugin Name: WP Auto Excerpt
 Description: Allows you to make your (custom) post types auto-fill the excerpt content on save post.
 Version: 1.0
 Author: TCBarrett
